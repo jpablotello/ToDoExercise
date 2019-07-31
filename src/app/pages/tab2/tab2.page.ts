@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TodoService } from 'src/app/services/todo.service';
+import { Lista } from '../../models/lista.model';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(public todoservice: TodoService) {
 
+  }
 }
